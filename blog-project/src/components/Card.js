@@ -25,7 +25,7 @@ export default function Card({
       <Link href={`/posts/${path}`}>
         <article className='overflow-hidden text-white rounded-md shadow-lg'>
           <Image
-            className='w-full'
+            className='w-full object-cover'
             alt={title}
             src={`/images/posts/${path}.png`}
             width={300}
@@ -33,7 +33,7 @@ export default function Card({
           />
           <div className='flex flex-col items-center p-4'>
             <time className='self-end'>{date}</time>
-            <h3 className='text-lg font-bold'>{title}</h3>
+            <h3 className='text-2xl font-bold'>{title}</h3>
             <p className='w-full truncate text-center'>{description}</p>
             <span className='text-sm rounded-lg bg-green-100 px-2 my-2 text-black font-bold'>
               {category}
