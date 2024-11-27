@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { Stack, Typography } from '@mui/material';
 import React from 'react';
 import Image from 'next/image';
@@ -7,9 +10,18 @@ import Head from 'next/head';
 import Button from './Button';
 
 export default function Profile() {
+  const router = useRouter();
+
   return (
-    <Stack justifyContent='center' alignItems='center' sx={{ mt: 2 }}>
-      <Image src={profileImg} alt='Emma profile' width={400} height={400} />
+    <Stack justifyContent='center' alignItems='center' sx={{ mt: 5 }}>
+      <Image
+        className='rounded-full'
+        src={profileImg}
+        alt='Emma profile'
+        width={250}
+        height={250}
+        priority // Next.js에게 알려줌 이게 제일 먼저 받아달라구, 중요하다구
+      />
       <Stack
         justifyContent='center'
         alignItems='center'
