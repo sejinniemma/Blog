@@ -9,66 +9,50 @@
   },
   {
     "title": "Pizza Monster",
-    "description": "I met first carbonara pasta ",
+    "description": "The best cream pasta I've ever had",
     "date": "2023-12-28",
     "category": "Korean",
     "path": "monster",
     "featured": true
   },
   {
-    "title": "자바스크립트 10가지 프로팁!",
-    "description": "프로처럼 자바스크립트 사용할 수 있는 10가지 팁",
-    "date": "2022-06-15",
-    "category": "javascript",
-    "path": "javascript-10-tips",
+    "title": "Surasang",
+    "description": "A korean restaurant our couple loves to eat at",
+    "date": "2023-12-30",
+    "category": "Korean",
+    "path": "spicy_porked",
     "featured": true
   },
   {
-    "title": "Node 기초 정리",
-    "description": "기본 적인 Node 사용법에 대해 전부 정리!",
-    "date": "2022-08-21",
-    "category": "backend",
-    "path": "node-basic",
-    "featured": false
-  },
-  {
-    "title": "2022년 리뷰",
-    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2022-12-31",
-    "category": "my story",
-    "path": "review-2022",
-    "featured": false
-  },
-  {
-    "title": "Node 프로 팁!",
-    "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
-    "date": "2023-04-10",
-    "category": "backend",
-    "path": "node-pro-tips",
+    "title": "G2",
+    "description": "Grilled beef or pork intestines",
+    "date": "2023-12-31",
+    "category": "Korean",
+    "path": "intestines",
     "featured": true
   },
   {
-    "title": "리액트 Best Practice!",
+    "title": "Second Floor",
     "description": "리액트를 정확하게 사용하는 방법들을 정리",
     "date": "2023-04-15",
-    "category": "frontend",
-    "path": "best-react-practices",
+    "category": "Korean",
+    "path": "2floor",
     "featured": true
   },
   {
-    "title": "리액트 18버전!",
-    "description": "리액트 18에 추가된 사항들 정리",
-    "date": "2023-05-02",
-    "category": "frontend",
-    "path": "react18-walkthrough",
+    "title": "Hmm",
+    "description": "Our First dissert in Melbourne",
+    "date": "2024-01-04",
+    "category": "Thailand",
+    "path": "bingsu",
     "featured": true
   },
   {
-    "title": "2023년 리뷰",
-    "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2023-12-31",
-    "category": "my story",
-    "path": "review-2023",
+    "title": "???",
+    "description": "The ice cream I dropped at the crosswalk",
+    "date": "2023-01-06",
+    "category": "China",
+    "path": "china_icecream",
     "featured": true
   }
 ]
