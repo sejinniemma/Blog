@@ -27,7 +27,7 @@ export default function Navbar() {
       justifyContent='space-between'
       alignItems='center'
       sx={{
-        pt: { xs: '-10px', md: 5 },
+        pt: { xs: 2, md: 5 },
         pr: { xs: 2, md: 10 },
         pl: { xs: 2, md: 10 },
       }}
