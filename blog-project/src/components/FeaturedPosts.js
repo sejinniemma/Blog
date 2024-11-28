@@ -3,9 +3,9 @@ import React from 'react';
 import Card from './Card';
 import { getFeaterdPosts } from '@/service/posts';
 
-export default async function Posts() {
+export default async function FeateredPosts() {
   const posts = await getFeaterdPosts();
-
+  console.log(`posts =>`, { posts });
   return (
     <Stack sx={{ mt: { xs: 5, md: 0 } }}>
       <h2 className='text-2xl font-bold text-white'>Featered Posts</h2>

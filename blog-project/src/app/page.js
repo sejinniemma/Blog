@@ -1,13 +1,14 @@
-import Posts from '@/components/Posts';
 import Profile from '@/components/Profile';
+import CarouselPosts from '@/components/CarouselPosts';
 import { Stack } from '@mui/material';
-import Image from 'next/image';
+import FeateredPosts from '@/components/FeaturedPosts';
 
 export default function HomePage() {
   return (
     <Stack>
       <Profile />
-      <Posts />
+      <FeateredPosts />
+      <CarouselPosts />
     </Stack>
   );
 }
