@@ -1,210 +1,74 @@
 [
   {
-    "title": "Hakoya Izakaya",
-    "description": "The Best Japanese restaurant in Melbourne",
-    "date": "2023-12-27",
-    "category": "Japanese",
-    "path": "hakoya",
-    "featured": true
-  },
-  {
-    "title": "Pizza Monster",
-    "description": "The best cream pasta I've ever had",
-    "date": "2023-12-28",
-    "category": "Korean",
-    "path": "monster",
-    "featured": true
-  },
-  {
-    "title": "Mensho",
-    "description": "The best cream pasta I've ever had",
-    "date": "2024-07-25",
-    "category": "Japanese",
-    "path": "ramen",
-    "featured": true
-  },
-  {
-    "title": "Sot",
-    "description": "The best cream pasta I've ever had",
-    "date": "2024-07-25",
-    "category": "Korean",
-    "path": "hotpot_rice",
-    "featured": true
-  },
-  {
-    "title": "Surasang",
-    "description": "A korean restaurant our couple loves to eat at",
-    "date": "2023-12-30",
-    "category": "Korean",
-    "path": "spicy_porked",
+    "title": "2021년 리뷰",
+    "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2021-12-31",
+    "category": "my story",
+    "path": "review-2021",
     "featured": false
   },
   {
-    "title": "양꼬치",
-    "description": "A korean restaurant our couple loves to eat at",
-    "date": "2024-01-07",
-    "category": "China",
-    "path": "lamb_skewers",
+    "title": "자바스크립트 기초 문법",
+    "description": "기본 문법부터 사용하는 실전까지 최종정리",
+    "date": "2022-05-08",
+    "category": "javascript",
+    "path": "javascript-basic",
+    "featured": false
+  },
+  {
+    "title": "자바스크립트 10가지 프로팁!",
+    "description": "프로처럼 자바스크립트 사용할 수 있는 10가지 팁",
+    "date": "2022-06-15",
+    "category": "javascript",
+    "path": "javascript-10-tips",
     "featured": true
   },
   {
-    "title": "이름??",
-    "description": "리액트를 정확하게 사용하는 방법들을 정리",
-    "date": "2024-08-05",
-    "category": "Korean",
-    "path": "오므라이스",
+    "title": "Node 기초 정리",
+    "description": "기본 적인 Node 사용법에 대해 전부 정리!",
+    "date": "2022-08-21",
+    "category": "backend",
+    "path": "node-basic",
+    "featured": false
+  },
+  {
+    "title": "2022년 리뷰",
+    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2022-12-31",
+    "category": "my story",
+    "path": "review-2022",
+    "featured": false
+  },
+  {
+    "title": "Node 프로 팁!",
+    "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
+    "date": "2023-04-10",
+    "category": "backend",
+    "path": "node-pro-tips",
     "featured": true
   },
   {
-    "title": "G2",
-    "description": "Grilled beef or pork intestines",
-    "date": "2023-12-31",
-    "category": "Korean",
-    "path": "intestines",
-    "featured": true
-  },
-  {
-    "title": "Second Floor",
+    "title": "리액트 Best Practice!",
     "description": "리액트를 정확하게 사용하는 방법들을 정리",
     "date": "2023-04-15",
-    "category": "Korean",
-    "path": "2floor",
-    "featured": false
-  },
-  {
-    "title": "Hmm",
-    "description": "Our First dissert in Melbourne",
-    "date": "2024-01-04",
-    "category": "Thailand",
-    "path": "bingsu",
-    "featured": false
-  },
-  {
-    "title": "???",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-01-06",
-    "category": "China",
-    "path": "china_icecream",
-    "featured": false
-  },
-  {
-    "title": "Victoria Night market",
-    "description": "All kinds of food from the world",
-    "date": "2023-08-21",
-    "category": "Others",
-    "path": "market",
-    "featured": false
-  },
-  {
-    "title": "홍콩반점",
-    "description": "Our First dissert in Melbourne",
-    "date": "2024-09-01",
-    "category": "China",
-    "path": "짜장면",
-    "featured": false
-  },
-  {
-    "title": "The Meat & Wine Co",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-01-07",
-    "category": "Others",
-    "path": "steak",
+    "category": "frontend",
+    "path": "best-react-practices",
     "featured": true
   },
   {
-    "title": "Sot",
-    "description": "Our First dissert in Melbourne",
-    "date": "2024-07-29",
-    "category": "Korean",
-    "path": "호두과자",
-    "featured": false
-  },
-  {
-    "title": "이름몰라",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-01-07",
-    "category": "China",
-    "path": "china_fried_rice",
-    "featured": false
-  },
-  {
-    "title": "Five Guys",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-08-15",
-    "category": "China",
-    "path": "fries",
-    "featured": false
-  },
-  {
-    "title": "수라상",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-08-15",
-    "category": "Korean",
-    "path": "닭볶음탕",
-    "featured": false
-  },
-  {
-    "title": "Ondo",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-07-22",
-    "category": "Korean",
-    "path": "닭볶음탕",
-    "featured": false
-  },
-  {
-    "title": "Rice Cake Soup",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-07-11",
-    "category": "Korean",
-    "path": "rice_cake_soup",
+    "title": "리액트 18버전!",
+    "description": "리액트 18에 추가된 사항들 정리",
+    "date": "2023-05-02",
+    "category": "frontend",
+    "path": "react18-walkthrough",
     "featured": true
   },
   {
-    "title": "K Street Food",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-07-08",
-    "category": "Korean",
-    "path": "소떡소떡",
-    "featured": false
-  },
-  {
-    "title": "Stubborn Pig",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-06-26",
-    "category": "Korean",
-    "path": "막창",
-    "featured": true
-  },
-  {
-    "title": "이름몰라",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-06-26",
-    "category": "Others",
-    "path": "italian_pizza",
-    "featured": false
-  },
-  {
-    "title": "이름몰라",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2023-06-17",
-    "category": "Korean",
-    "path": "칼국수",
-    "featured": true
-  },
-  {
-    "title": "Doju",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2024-04-16",
-    "category": "Korean",
-    "path": "doju",
-    "featured": false
-  },
-  {
-    "title": "국밥집",
-    "description": "The ice cream I dropped at the crosswalk",
-    "date": "2024-04-23",
-    "category": "Korean",
-    "path": "국밥",
+    "title": "2023년 리뷰",
+    "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2023-12-31",
+    "category": "my story",
+    "path": "review-2023",
     "featured": true
   }
 ]
