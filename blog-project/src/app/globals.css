@@ -8,23 +8,12 @@ body {
   overflow-y: scroll;
   overflow: hidden;
   font-family: 'Pretendard', sans-serif;
-  background-color: rgb(23 23 23);
+  background-color: rgb(28, 28, 28);
 }
 
-body {
+/* body {
   background-image: url('/images/street2.jpeg');
-  background-size: cover; /* 배경 이미지가 화면에 꽉 차도록 설정 */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-*/
-
-/* Hide scrollbar but keep scrolling functionality */
-.no-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
+} */
