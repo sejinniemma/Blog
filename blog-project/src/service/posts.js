@@ -20,13 +20,18 @@ export async function getAllPosts() {
 
 export async function getPostData(fileName) {
   const filePath = path.join(process.cwd(), 'data', 'posts', `${fileName}.md`);
-  const metadata = await getAllPosts() //
-    .then((posts) => posts.find((post) => post.path === fileName));
+  const posts = await getAllPosts(); //
+  const post = posts.find((post) => post.path === fileName);
 
-  if (!metadata) {
+  if (!post) {
     throw new Error(`${fileName} can not be found`);
   }
 
+  const index = posts.indexOf(post);
+  const next = index >= 0 || index < post.length - 1 ? posts[index + 1] : null;
+  const prev =
+    index > 0 || index === posts.length - 1 ? posts[index - 1] : null;
   const content = await readFile(filePath, 'utf-8');
-  return { ...metadata, content };
+
+  return { ...post, content, next, prev };
 }
