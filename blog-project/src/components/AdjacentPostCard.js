@@ -16,7 +16,6 @@ export default async function AdjacentPostCard({
   post: { path, description, title },
   type,
 }) {
-  console.log(`title =>`, { title });
   return (
     <Link href={`/posts/${path}`} className='relative w-full bg-black max-h-56'>
       <Image

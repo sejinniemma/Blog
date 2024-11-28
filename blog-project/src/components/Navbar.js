@@ -60,7 +60,10 @@ export default function Navbar() {
         >
           {['Home', 'About', 'Posts', 'Contact'].map((li, index) => {
             return (
-              <Link key={index} href={`/${li.toLowerCase()}`}>
+              <Link
+                key={index}
+                href={li === 'Home' ? '/' : `/${li.toLowerCase()}`}
+              >
                 <Typography
                   sx={{
                     position: 'relative',
