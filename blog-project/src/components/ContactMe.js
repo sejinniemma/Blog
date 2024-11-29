@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -6,29 +5,30 @@ import { FaLinkedin } from 'react-icons/fa';
 export default function ContactMe() {
   return (
     <div className='flex flex-col items-center justify-center'>
-      <h2 className='text-4xl font-bold '>Contact Me</h2>
+      <h2 className='text-4xl font-bold mb-2'>Contact Me</h2>
       <p className='text-xl'>sejinniemma@gmail.com</p>
-      <div className='flex flex-row'>
-        {contactInfo.map((info, index) => {
+      <ul className='flex gap-2'>
+        {LINKS.map((link, index) => {
           return (
-            <Link
+            <a
               key={index}
-              href={info.link}
-              className='text-2xl text-white mr-2 mt-2 cursor-pointer hover:text-sky-300'
+              href={link.url}
+              target='_blank'
+              className='text-5xl text-white  mt-2 cursor-pointer hover:text-yellow-300'
             >
-              {info.iconImg}
-            </Link>
+              {link.icon}
+            </a>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 }
 
-const contactInfo = [
-  { iconImg: <FaGithub />, link: 'https://github.com/sejinniemma' },
+const LINKS = [
+  { icon: <FaGithub />, url: 'https://github.com/sejinniemma' },
   {
-    iconImg: <FaLinkedin />,
-    link: 'https://www.linkedin.com/in/emma-j-128718214/',
+    icon: <FaLinkedin />,
+    url: 'https://www.linkedin.com/in/emma-j-128718214/',
   },
 ];

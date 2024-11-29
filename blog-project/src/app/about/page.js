@@ -4,16 +4,16 @@ import React from 'react';
 
 export default function AboutPage() {
   return (
-    <div className='flex flex-col mb-5'>
+    <di className='flex flex-col mb-5'>
       <Profile />
-      <div className='flex flex-col items-center w-full bg-gray-300 justify-center  p-4 mt-8 shadow-xl rounded-md'>
+      <section className='flex flex-col items-center w-full border-2  border-white justify-center  p-4 mt-8 shadow-xl rounded-md'>
         {myInfo.map((info, index) => {
           return (
-            <div key={index} className='text-center mb-2'>
-              <h3 className='font-bold text-2xl'>{info.title}</h3>
+            <div key={index} className='text-center mb-2 mt-2'>
+              <h3 className='font-bold text-2xl text-gray-400'>{info.title}</h3>
               {info.desc.map((el, index) => {
                 return (
-                  <p key={index} className='text-lg'>
+                  <p key={index} className='text-lg text-white'>
                     {el}
                   </p>
                 );
@@ -21,8 +21,8 @@ export default function AboutPage() {
             </div>
           );
         })}
-      </div>
-    </div>
+      </section>
+    </di>
   );
 }
 
