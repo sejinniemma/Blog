@@ -1,5 +1,6 @@
 import { readFile } from 'fs/promises';
 import path from 'path';
+import { cache } from 'react';
 
 export async function getFeaterdPosts() {
   return getAllPosts() //
@@ -11,12 +12,13 @@ export async function getNonFeaterdPosts() {
     .then((posts) => posts.filter((post) => !post.featured));
 }
 
-export async function getAllPosts() {
+export const getAllPosts = cache(async () => {
+  // SSR일 경우 좋음 :  중복호출 방지 -> fetch는 자동으로 중복제거
   const filePath = path.join(process.cwd(), 'data', 'posts.json');
-  return readFile(filePath, 'utf-8') // promise를 리턴
-    .then(JSON.parse)
-    .then((posts) => posts.sort((a, b) => (a.date > b.data ? -1 : 1)));
-}
+  const text = await readFile(filePath, 'utf-8'); // promise를 리턴
+  const posts = await JSON.parse(text);
+  return posts.sort((a, b) => (a.date > b.data ? -1 : 1));
+});
 
 export async function getPostData(fileName) {
   const filePath = path.join(process.cwd(), 'data', 'posts', `${fileName}.md`);

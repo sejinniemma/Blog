@@ -1,6 +1,9 @@
 import Profile from '@/components/Profile';
-import { Stack, Typography } from '@mui/material';
-import React from 'react';
+
+export const metadata = {
+  title: 'About Me',
+  description: '꿀이의 커리어 소개',
+};
 
 export default function AboutPage() {
   return (

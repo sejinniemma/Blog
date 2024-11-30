@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Banner from './Banner';
+import { sendContactEmail } from '@/service/sendContactEmail';
 
 // Yup 유효성 검사 스키마
 const schema = yup
@@ -34,15 +35,22 @@ export default function ContactForm() {
     resolver: yupResolver(schema), // yup을 유효성 검사기로 사용
   });
   const [banner, setBanner] = useState();
-  // 폼 제출 핸들러
+
   const onSubmit = (data) => {
     console.log('Form Data:', data);
-    setBanner({ message: 'Successfully submitted!', state: 'success' });
-    setTimeout(() => {
-      setBanner(null);
-    }, 3000);
 
-    // 실제 메일 전송 로직은 API 요청 등으로 처리
+    // service에 정의 해둔 api 요청함수 호출
+    sendContactEmail(data) //
+      .then(() => setBanner({ message: 'Success', state: 'success' })) //
+      .catch(() => {
+        setBanner({ message: 'Failed', state: 'error' });
+      })
+      .finally(() => {
+        // 3초 후 배너 제거
+        setTimeout(() => {
+          setBanner(null);
+        }, 3000);
+      });
   };
 
   return (

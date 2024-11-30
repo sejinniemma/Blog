@@ -1,8 +1,15 @@
 import AdjacentPostCard from '@/components/AdjacentPostCard';
 import PostContent from '@/components/PostContent';
-import { getPostData } from '@/service/posts';
+import { getFeaterdPosts, getPostData } from '@/service/posts';
 import Image from 'next/image';
-import React from 'react';
+
+export async function generateMetadata({ params: { slug } }) {
+  const { title, description } = await getPostData(slug);
+  return {
+    title,
+    description,
+  };
+}
 
 export default async function PostPage({ params: { slug } }) {
   const post = await getPostData(slug);
@@ -23,4 +30,11 @@ export default async function PostPage({ params: { slug } }) {
       </section>
     </article>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getFeaterdPosts();
+  return posts.map((post) => ({
+    slug: post.path,
+  }));
 }

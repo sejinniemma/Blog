@@ -1,7 +1,11 @@
 import { getAllPosts } from '@/service/posts';
 import FilterablePosts from '@/components/FilterablePosts';
 import { Stack, Typography } from '@mui/material';
-import React from 'react';
+
+export const metadata = {
+  title: 'All Posts',
+  description: '풀스택 관련 블로그 글',
+};
 
 export default async function PostsPage() {
   const posts = await getAllPosts();

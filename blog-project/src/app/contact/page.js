@@ -1,6 +1,10 @@
 import ContactForm from '@/components/ContactForm';
 import ContactMe from '@/components/ContactMe';
-import React from 'react';
+
+export const metadata = {
+  title: 'Contact Me',
+  description: '꿀이에게 메일 보내기',
+};
 
 export default function ContactPage() {
   return (

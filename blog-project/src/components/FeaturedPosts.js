@@ -6,7 +6,6 @@ import PostsGrid from './PostsGrid';
 
 export default async function FeateredPosts() {
   const posts = await getFeaterdPosts();
-  console.log(`posts =>`, { posts });
   return (
     <Stack sx={{ mt: { xs: 5, md: 0 } }}>
       <h2 className='text-2xl font-bold text-white my-2'>Featered Posts</h2>
